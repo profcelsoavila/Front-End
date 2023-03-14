@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1> Cadastro </h1>
+	<form action="http://www.meusite.com/Cadastro.php" method="post">
+		<label for="txNome">Nome</label>
+		<input type="text" id="txNome" size="50" maxlength="40"> <br> <br>
+		<label for="txSenha">Digite uma senha</label>
+		<input type="password" id="txSenha" size="10" maxlength="8"> <br> <br>
+		<label for="txData">Nascimento</label>
+		<input type="date" id="txData"> <br> <br> <br>
+		<label for="txCodigo">Código recebido</label>
+		<input type="number" id="txCodigo" min="5" max="10"> <br> <br>
+		<label for="txemail">E-mail</label>
+		<input type="email" id="txEmail" size="30"> <br> <br>
+		<label for="ecivil">Estado Civil</label><br><br>
+
+		<input type="radio" name="ecivil" value="Solteiro"> Solteiro
+		<input type="radio" name="ecivil" value="Casado"> Casado
+		<input type="radio" name="ecivil" value="Divorciado"> Divorciado <br> <br>
+
+		<label for="foto">Envie sua foto</label><br>
+		<input type="file" id="foto"> <input type="submit" value="Upload"> <br> <br>
+
+		<fieldset style="width: 200px;">
+			<legend>Suas preferências</legend>
+			<input type="checkbox" id="ckPref" value="Livros"> Livros <br>
+			<input type="checkbox" id="ckPref" value="Games"> Games <br>
+			<input type="checkbox" id="ckPref" value="Bike"> Bike <br>
+			<input type="checkbox" id="ckPref" value="Musica"> Música <br>
+			<input type="checkbox" id="ckPref" value=Ïnformatica"> Informática <br>
+		</fieldset>
+		<br><br>
+
+		<label for="estado">Onde você mora?</label>
+		<select id="estado">
+			<option value="MG">MG</option>
+			<option value="SP">SP</option>
+			<option>RJ</option>
+			<option>ES</option>
+		</select> <br> <br>
+
+		<label for="info">Como você conheceu nosso site?</label> <br>
+		<select multiple id="info">
+			<option>Internet</option>
+			<option>TV</option>
+			<option>E-Mail</option>
+			<option>Outdoor</option>
+		</select> <br> <br>
+
+		<label for="sugestao">Deixe aqui sua sugestão</label> <br>
+		<textarea rows="10" cols="50" id="sugestao">Digite seu texto aqui</textarea> <br> <br>
+
+		<input type="reset" id="limpar" value="Limpar">
+		<input type="submit" id="submit" value="Enviar">
+		<input type="button" id="btacao" value="Teste" Onclick=alert('Teste')>
+	</form>
+</body>
+
+</html>
