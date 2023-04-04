@@ -1,0 +1,25 @@
+<html>
+
+<body>
+	<script>
+
+		var cont, i, j;
+		cont = 0;
+
+		for (j = 2; j <= 100; j++) {
+
+			for (i = 2; i <= j; i++) {
+
+				if (j % i == 0) {
+					cont++;
+				}
+			}
+
+			if (cont == 1) {
+				document.write(j + "<br>");
+			}
+			cont = 0;
+		}
+	</script>
+</body>
+</hmtl>
